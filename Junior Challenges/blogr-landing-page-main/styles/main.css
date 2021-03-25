@@ -14,21 +14,51 @@ button {
 	padding: 15px 30px;
 	border-radius: 25px;
 	font-weight: bold;
+
+	margin-left: 7px;
+	margin-right: 7px;
 }
 
-section {
+section,
+footer {
 	margin-left: 150px;
 	margin-right: 150px;
+}
+
+section:nth-child(even):not(#landing) {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+section header h2 {
+	text-align: center;
+	margin-bottom: 100px;
 }
 
 .blogr_title {
 	font-size: 2.5rem;
 }
 
-/* LANDING SECTION */
+h1 {
+	font-size: 3.75rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 1.75rem;
+}
+
+p {
+	line-height: 2;
+}
+
+/* LANDING NAV SECTION */
 
 #landing {
-	margin: 50px 150px 150px 150px;
+	margin: 50px 150px 100px 150px;
 }
 
 #landing * {
@@ -52,4 +82,34 @@ section {
 
 #landing .nav-menu_button-container .button-container_menu-items {
 	display: none;
+}
+
+/* LANDING HERO */
+
+#landing #hero {
+	margin: auto;
+	text-align: center;
+}
+
+#landing #hero h1 {
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+
+#landing #hero span {
+	font-size: 19px;
+}
+
+#landing #hero div {
+	margin-top: 50px;
+}
+
+/* SITE BODY */
+
+section .text-content {
+	width: 40%;
+}
+
+section .text-content div {
+	margin-bottom: 100px;
 }
