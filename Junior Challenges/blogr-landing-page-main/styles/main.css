@@ -3,6 +3,8 @@
 body {
 	font-family: "Overpass", "Arial", sans-serif;
 	font-size: 16px;
+	margin: 0;
+	overflow-x: hidden;
 }
 
 #title,
@@ -19,8 +21,8 @@ button {
 	margin-right: 7px;
 }
 
-section,
-footer {
+section .content_container,
+footer .footer_container {
 	margin-left: 150px;
 	margin-right: 150px;
 }
@@ -32,10 +34,10 @@ section:nth-child(even):not(#landing) {
 
 section header h2 {
 	text-align: center;
-	margin-bottom: 100px;
 }
 
 .blogr_title {
+	margin-right: 20px;
 	font-size: 2.5rem;
 }
 
@@ -44,7 +46,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 }
 
 h3 {
@@ -55,10 +57,25 @@ p {
 	line-height: 2;
 }
 
-/* LANDING NAV SECTION */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 
+nav > ul {
+	display: flex;
+}
+
+/* LANDING NAV SECTION */
 #landing {
-	margin: 50px 150px 100px 150px;
+	color: white;
+	background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+
+	padding-bottom: 150px;
+}
+#landing #landing_header {
+	padding: 50px 150px 100px 150px;
 }
 
 #landing * {
@@ -110,6 +127,42 @@ section .text-content {
 	width: 40%;
 }
 
+section .graphic {
+	width: 60%;
+}
+
 section .text-content div {
 	margin-bottom: 100px;
+}
+
+section .content_header {
+	margin-bottom: 100px;
+}
+
+/* FOOTER */
+
+footer {
+	display: flex;
+	color: white;
+	background-color: hsl(237, 17%, 21%);
+}
+.footer_container {
+	width: 100%;
+}
+
+footer nav {
+	width: 100%;
+	margin: 50px 20px 100px;
+}
+
+footer nav > ul {
+	justify-content: space-evenly;
+}
+
+footer nav ul li > ul {
+	margin-top: 30px;
+}
+
+footer nav ul li > ul li {
+	margin-top: 15px;
 }
