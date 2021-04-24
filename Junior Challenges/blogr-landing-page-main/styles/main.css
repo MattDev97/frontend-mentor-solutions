@@ -23,6 +23,7 @@ button {
 
 section .content_container,
 footer .footer_container {
+	margin-top: 120px;
 	margin-left: 150px;
 	margin-right: 150px;
 }
@@ -73,6 +74,7 @@ nav > ul {
 	background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
 
 	padding-bottom: 150px;
+	border-radius: 0 0 0 60px;
 }
 #landing #landing_header {
 	padding: 50px 150px 100px 150px;
@@ -123,6 +125,10 @@ nav > ul {
 
 /* SITE BODY */
 
+section .full-width {
+	margin-left: 0;
+	margin-right: 0;
+}
 section .text-content {
 	width: 40%;
 }
@@ -137,6 +143,39 @@ section .text-content div {
 
 section .content_header {
 	margin-bottom: 100px;
+}
+
+section .content_container {
+	display: flex;
+}
+
+section .graphic {
+	position: relative;
+}
+
+section .graphic img {
+	position: absolute;
+}
+
+section .graphic img.background {
+	z-index: 1;
+	bottom: -35%;
+	left: -7%;
+	height: 1000px;
+}
+
+section .graphic img.foreground {
+	z-index: 10;
+	height: 190%;
+	left: 25%;
+	bottom: -45%;
+}
+
+section .inverted {
+	background: linear-gradient(145deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+	color: white;
+	padding: 66px 80px;
+	border-radius: 0 80px;
 }
 
 /* FOOTER */
